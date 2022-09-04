@@ -1,68 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Muhammad Daryl Rashad</title>
-        <meta charset="UTF-8">
-        <meta name="author" content="Muhammad Daryl Rashad">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="refresh" content="5; URL=http://192.168.31.57">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    </head>
+<html lang="en" class="h-100">
 
-    <body class="container bg-alert px-5">
-        <header class="row text-center">
-            <h1>Muhammad Daryl Rashad</h1>
-            <p>Hi, I'm Daryl and I'm a computer science student at the <a href="https://www.tu-clausthal.de" target="_blank">Technische Universität Clausthal</a> in Clausthal-Zellerfeld, Germany.</p>
+<head>
+    <title>Muhammad Daryl Rashad</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Muhammad Daryl Rashad">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh">
+    <link href="./styles/index.css" rel="stylesheet">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body class="container-fluid d-flex bg-light m-0 px-0 h-100">
+    <div class="d-flex flex-column w-100">
+        <header class="mt-3 mx-5 px-3">
+            <h1 class="display-3 fw-semibold mb-0">Muhammad Daryl Rashad</h1>
+            <p class="lead fw-normal mt-0">Hi! I'm Daryl and I'm a computer science student
+                at the <a href="https://www.tu-clausthal.de/en" target="_blank">Technische Universität Clausthal</a> in
+                Clausthal-Zellerfeld, Germany.</p>
         </header>
 
-        <!-- <nav class="navbar navbar-expand-sm navbar-light justify-content-center sticky-top border-top border-bottom">
-            <ul class="navbar-nav">
-                <li class="nav-item border-end">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item border-end">
-                    <a class="nav-link" href="#">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About me</a>
-                </li>
-            </ul>
-        </nav> Not yet implemented! -->
+        <main class="mb-auto mt-0 mx-5 px-3 pb-5">
+            <h2 class="mb-0">Here are some things I've done...</h2>
+            <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 h-100 g-3 mt-0">
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title mb-0 pb-0 ">drlrshd.dev</h4>
+                            <em class="card-subtitle  text-muted">August 2022 - ongoing</em>
+                            <p class="card-text text-em">This website! 😁</p>
+                            <small class="text-muted">(Click on this card to view on Github)</small>
+                            <a href="https://github.com/drlrshd/drlrshd.dev" target="_blank" class="stretched-link"></a>
 
-        <main>
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <h3>drlrshd.dev</h3>
-                    <i>August 2022 - ongoing</i>
-                    <p>Personal website project</p>
-                </li>
-                <li>
-                    <h3>Homelab/-server</h3>
-                    <i>August 2022 - ongoing</i>
-                    <p>Linux server used mainly for file storage, experimenting and doing projects.</p>
-                </li>
-                <li>
-                    <h3>VierGewinnt</h3>
-                    <i>Summer 2022</i>
-                    <p>Java-based Connect Four game</p>
-                </li>
-                <li>
-                    <h3>Bluetooth-controlled Mini-car</h3>
-                    <i>Winter 2021</i>
-                    <p>An AVR-based mini-car controlled by a bluetooth remote</p>
-                </li>
-            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="badge m-0">HTML</span>
+                            <span class="badge m-0">CSS</span>
+                            <span class="badge m-0">Javascript</span>
+                            <span class="badge m-0">Bootstrap</span>
+                            <span class="badge m-0">Node.Js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title mb-0 pb-0 ">Homelab/-server</h4>
+                            <em class="card-subtitle  text-muted">August 2022 - ongoing</em>
+                            <p class="card-text text-em">Linux server used mainly for file storage, experimenting
+                                and
+                                doing projects.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="badge">Linux</span>
+                            <span class="badge">Debian</span>
+                            <span class="badge">Apache2</span>
+                            <span class="badge">Networking</span>
+                            <span class="badge">VM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title mb-0 pb-0 ">VierGewinnt</h4>
+                            <em class="card-subtitle  text-muted">Summer 2022</em>
+                            <p class="card-text text-em">Local multiplayer game of Connect-Four built with Java.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="badge">Java</span>
+                            <span class="badge">Object-Oriented Programming</span>
+                            <span class="badge">IntelliJ</span>
+                            <span class="badge">MVC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title mb-0 pb-0 ">Bluetooth-controlled Mini-car</h4>
+                            <em class="card-subtitle  text-muted">Winter 2021</em>
+                            <p class="card-text text-em">AVR-based mini-car controlled remotely via bluetooth.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="badge">AVR</span>
+                            <span class="badge">Microcomputer</span>
+                            <span class="badge">C/C++</span>
+                            <span class="badge">Atmel Studio</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
         </main>
 
-        <footer>
-            <h4>Let's get in touch!</h4>
-            <ul>
-                <li><a href="mailto:darylrashad@gmail.com" target="_blank">darylrashad@gmail.com</a></li>
-                <li><a href="https://www.github.com/drlrshd" target="_blank">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/m-daryl-rashad" target="_blank">LinkedIn</a></li>
-            </ul>
+        <footer class="bg-secondary border-top border-4 border-primary text-light text-center py-2 mb-0 mt-5">
+            <div class="d-flex justify-content-center mb-1">
+                <h5 class="mb-1 align-self-center me-2">Let's get in touch!</h4>
+                    <ul class="list-unstyled mb-0 ms-2">
+                        <li class="mb-0"><i class="bi bi-send"></i> <a href="mailto:hello@drlrshd.dev"
+                                target="_blank">hello@drlrshd.dev</a></li>
+                        <li class="mb-0"><i class="bi bi-github"></i> <a href="https://www.github.com/drlrshd"
+                                target="_blank">Github</a>
+                        </li>
+                        <li class="mb-0"><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/m-daryl-rashad"
+                                target="_blank">LinkedIn</a></li>
+                    </ul>
+            </div>
+            
+            <small>&copy; Copyright 2022, Muhammad Daryl Rashad</small>
         </footer>
-    </body>
+    </div>
+
+</body>
+
 </html>
