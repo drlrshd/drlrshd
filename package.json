@@ -10,14 +10,14 @@
     "postcss": "^8.4.16",
     "sass": "^1.54.6"
   },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "nodemon": "^2.0.19"
+  },
   "scripts": {
     "start": "nodemon --exec \"npm-run-all build:dev serve\"",
     "serve": "http-server",
     "build:dev": "node ./scripts/build.js",
     "build:prod": "cross-env NODE_ENV=Production node ./scripts/build.js"
-  },
-  "devDependencies": {
-    "http-server": "^14.1.1",
-    "nodemon": "^2.0.19"
   }
 }

@@ -3,3 +3,6 @@ dist/
 index.css
 index.css.map
 index.min.css
+
+# Local Netlify folder
+.netlify
