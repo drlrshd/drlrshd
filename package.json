@@ -1,23 +1,35 @@
 {
   "name": "drlrshd.dev",
   "version": "1.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drlrshd/drlrshd.dev.git"
+  },
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/drlrshd/drlrshd.dev/issues"
+  },
+  "homepage": "https://github.com/drlrshd/drlrshd.dev#readme",
+  "description": "",
   "dependencies": {
-    "autoprefixer": "^10.4.8",
-    "bootstrap": "^5.2.0",
-    "clean-css": "^5.3.1",
-    "cross-env": "^7.0.3",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.16",
-    "sass": "^1.54.6"
+    "bootstrap": "^5.2.1",
+    "next": "^12.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.54.9"
   },
   "scripts": {
-    "start": "nodemon --exec \"npm-run-all build:dev serve\"",
-    "serve": "http-server",
-    "build:dev": "node ./scripts/build.js",
-    "build:prod": "cross-env NODE_ENV=Production node ./scripts/build.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint && prettier -c pages components"
   },
   "devDependencies": {
-    "http-server": "^14.1.1",
-    "nodemon": "^2.0.19"
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "^12.3.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1"
   }
 }

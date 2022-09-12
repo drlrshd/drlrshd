@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "airbnb",
+    "next/core-web-vitals",
+    "plugin:@next/next/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "react/jsx-props-no-spreading": 0,
+    "linebreak-style": [1, "unix"]
+  }
+}
